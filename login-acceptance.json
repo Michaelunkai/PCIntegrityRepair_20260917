@@ -1,0 +1,29 @@
+{
+  "CapturedUtc": "2026-09-18T01:31:27.5614469Z",
+  "LauncherExitCode": 4,
+  "Evidence": "F:\\study\\Systems\\Windows\\Maintenance\\Recovery\\Integrity\\PCIntegrityRepair_20260917\\WindowsCatalogRepair-Package\\evidence\\catalog-corruption-20260918-043125-722",
+  "LoginChecksComplete": true,
+  "Issues": [
+    {
+      "Detail": "Fewer than two enabled local administrators. Create a separate recovery administrator in Settings and verify its sign-in before relying on it.",
+      "Check": "Recovery prerequisite"
+    },
+    {
+      "Detail": "Less than 30 days of Application history are retained; the recurring failure may not be represented.",
+      "Check": "Event coverage"
+    },
+    {
+      "Detail": "Credential provider filters are installed; their effect on sign-in requires verification.",
+      "Check": "Credential filters"
+    },
+    {
+      "Detail": "Hello-only sign-in preference is enabled; verify a usable recovery method in Sign-in options.",
+      "Check": "Password fallback"
+    }
+  ],
+  "WindowsChanges": 0,
+  "QueueUnchanged": true,
+  "FullIntegrityRunPerformed": false,
+  "RebootPerformed": false,
+  "ActualSignInTested": false
+}

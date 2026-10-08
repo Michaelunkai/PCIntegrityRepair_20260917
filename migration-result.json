@@ -1,0 +1,8 @@
+﻿{
+    "Source":  "C:\\Users\\Admin\\.codex\\PCIntegrityRepair_20260917",
+    "Destination":  "F:\\study\\Systems\\Windows\\Maintenance\\Recovery\\Integrity\\PCIntegrityRepair_20260917",
+    "VerifiedFiles":  2485,
+    "VerifiedUtc":  "2026-09-17T21:33:55.4072030Z",
+    "OriginalRetained":  true,
+    "Reason":  "Recent F: disk I/O retries and USB resets; original is a recovery copy, destination is active project."
+}

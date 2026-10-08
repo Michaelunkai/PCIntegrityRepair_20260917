@@ -1,0 +1,46 @@
+WINDOWS SIGN-IN RECOVERY - READ BEFORE REBOOT
+
+The repair never signs you out or reboots. A successful scan does not prove that
+your next password, PIN, biometric or profile load will work.
+
+Before reboot, save your work and back up personal files to a separate location.
+Know your account password: a Windows Hello PIN is not that password. Verify
+your Microsoft account recovery methods from another device if applicable.
+In Settings > Accounts > Other users, create a separate local recovery account,
+give it a strong unique password, and change its account type to Administrator.
+Use Switch user to verify that account can sign in and elevate, then return to
+your main session. Do not send passwords to a chat or save them in these logs.
+An enabled account or an old LastLogon timestamp does not prove it works today.
+Keep any BitLocker recovery key available outside this PC. Do not reboot to test
+this package until unresolved readiness items and recovery access are addressed.
+
+IF SIGN-IN FAILS
+1. Record the exact message, error code, account and time. For a PIN problem,
+   choose Sign-in options and use your password if offered. Use "I forgot my PIN"
+   only through Windows' supported recovery flow. Check keyboard layout/network.
+2. For a temporary profile, save newly created files to a separate location BEFORE
+   signing out; temporary-profile files may disappear. Do not delete the old profile.
+3. Try the separately tested recovery administrator. Run Run-Repair.cmd
+   -LoginCheckOnly as administrator to collect fresh login diagnostics. Full repair
+   is Run-Repair.cmd. Check evidence/login-readiness-* and result.json in the run
+   folder printed by the launcher. The check-only mode does not repair Windows.
+4. If no account works, use Shift + Restart from the sign-in screen to enter Windows
+   Recovery, then Troubleshoot > Advanced options. System Restore may undo a recent
+   change if a suitable restore point exists. Uninstall Updates may help when the
+   failure began immediately after an update. Availability and success vary; an
+   encrypted drive may require its recovery key. This script runs in full Windows,
+   not in the Recovery command prompt. Startup Repair addresses startup failures
+   and is not a general password or profile repair.
+5. If Windows confirms a corrupt profile, Microsoft's supported recovery uses a
+   new administrator profile and migration of personal files. Keep the original
+   data; apps and settings may need reconfiguration. Seek help if encrypted files
+   or account recovery are involved. Never blindly copy broken registry hives.
+
+Do not clear TPM/NGC, rename/delete ProfileList .bak keys, reset passwords offline,
+enable automatic login, disable security software or reset broad permissions as
+a generic fix. These actions can lose access or hide the underlying fault.
+
+Microsoft reference procedures:
+https://support.microsoft.com/en-us/windows/security/identity-signin/troubleshoot-problems-signing-in-to-windows
+https://support.microsoft.com/en-us/windows/security/identity-signin/fix-a-corrupted-user-profile
+https://support.microsoft.com/en-us/windows/security/change-or-reset-your-pin-in-windows

@@ -1,0 +1,58 @@
+﻿{
+    "RecordedUtc":  "2026-09-17T23:20:59.4065594Z",
+    "ActiveProject":  "F:\\study\\Systems\\Windows\\Maintenance\\Recovery\\Integrity\\PCIntegrityRepair_20260917",
+    "Evidence":  "F:\\study\\Systems\\Windows\\Maintenance\\Recovery\\Integrity\\PCIntegrityRepair_20260917\\WindowsCatalogRepair-Package\\evidence\\catalog-corruption-20260918-020445-590",
+    "Integrity":  "VerifiedClean",
+    "RebootReadiness":  "NeedsAttention",
+    "NativePackageExitCode":  4,
+    "TestedScriptSHA256":  "D66D123A829E038255061ED6635E27968F409A99C79068716F866DDF50904B09",
+    "CatalogsAddedInFinalRun":  54,
+    "TrustChecks":  222,
+    "TrustChecksPassed":  222,
+    "FailedNativeChecks":  [
+                               {
+                                   "Name":  "System filesystem",
+                                   "Passed":  false,
+                                   "Detail":  "Online CHKDSK scan; no offline repair or reboot was scheduled."
+                               }
+                           ],
+    "AttentionItems":  [
+                           {
+                               "Check":  "Event history",
+                               "Detail":  "30 event(s): disk, 153; latest 09/18/2026 00:01:31. See full report; historical events are not automatically proof of an ongoing fault."
+                           },
+                           {
+                               "Check":  "Event history",
+                               "Detail":  "1 event(s): Service Control Manager, 7034; latest 09/17/2026 23:39:56. See full report; historical events are not automatically proof of an ongoing fault."
+                           },
+                           {
+                               "Check":  "Event history",
+                               "Detail":  "1 event(s): UASPStor, 129; latest 09/18/2026 00:01:31. See full report; historical events are not automatically proof of an ongoing fault."
+                           },
+                           {
+                               "Check":  "Crash history coverage",
+                               "Detail":  "System event history starts 09/17/2026 23:39:54; less than seven days are available. Absence of crashes is not proof of no prior crash."
+                           },
+                           {
+                               "Check":  "Pending protected-file operation",
+                               "Detail":  "C:\\Windows\\System32\\drivers\\klupd_95230141a_klark.sys -\u003e ; requires review, not blindly cleared."
+                           },
+                           {
+                               "Check":  "Pending protected-file operation",
+                               "Detail":  "C:\\Windows\\System32\\drivers\\klupd_95230141a_mark.sys -\u003e ; requires review, not blindly cleared."
+                           },
+                           {
+                               "Check":  "Pending protected-file operation",
+                               "Detail":  "C:\\Windows\\System32\\drivers\\95230141.sys -\u003e ; requires review, not blindly cleared."
+                           },
+                           {
+                               "Check":  "Crash capture",
+                               "Detail":  "No active pagefile or dedicated dump file was reported. System-managed paging configured=True; activation remains unverified until a later boot."
+                           }
+                       ],
+    "PendingQueueUnchanged":  true,
+    "RebootPerformed":  false,
+    "UniversalSafetyGuarantee":  false,
+    "OriginalFilesVerifiedDuringRelocation":  2485,
+    "RecoveryCopy":  "C:\\Users\\Admin\\.codex\\PCIntegrityRepair_20260917.pre-move-recovery"
+}

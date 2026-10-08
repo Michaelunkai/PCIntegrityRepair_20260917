@@ -1,0 +1,101 @@
+﻿{
+    "RecordedUtc":  "2026-09-17T23:25:47.6407330Z",
+    "Cause":  "fastcc -\u003e ccsizes explicitly removed Windows catroot and CatRoot2 contents; later SFC reported 152 PnP repair failures.",
+    "Corrections":  [
+                        "Excluded all Windows directory patterns, installer caches and crash evidence",
+                        "Protected catalog/recovery trees and profile runtimes, including ancestor matches",
+                        "Disabled system-root and protected-subtree cleanc sweeps",
+                        "Removed forced recursive temp deletion from all ccsizes profile snapshots",
+                        "Cache cleanup deletes only files older than seven days; skips reparse trees and locked files; never queues reboot deletion",
+                        "fastff honors 5-30 second status intervals; servicing wait no longer capped to five seconds"
+                    ],
+    "SourceHashes":  [
+                         {
+                             "Path":  "F:\\study\\Shells\\powershell\\scripts\\misc\\ccsizes\\ccsizes-cleanup-patterns-v2.ps1",
+                             "Hash":  "BBDB904C2C3CC1454B263A8001B6A304D52B9EAA10ECE085E24D6FB3FE82C97E"
+                         },
+                         {
+                             "Path":  "F:\\study\\Learning\\01\\01\\Shells\\powershell\\profile-functions\\windows\\cleanup\\system-clean\\CleanCSystemCleanup\\Invoke-cleanc.ps1",
+                             "Hash":  "FFB4875617AC0F073ABC10FBDF37B5CA91563071A5C84B1E999FC4BC05537A73"
+                         },
+                         {
+                             "Path":  "F:\\study\\repos\\shells\\powershell\\fixfixfix.ps1",
+                             "Hash":  "FC0AE42E93EAB6D23452E643072848D653630D71B85E895FB268C07332902724"
+                         },
+                         {
+                             "Path":  "C:\\Users\\Admin\\Documents\\WindowsPowerShell\\ProfileSources\\ps5-profile-portable\\Microsoft.PowerShell_profile.runtime.ps1",
+                             "Hash":  "9C111F0644BF795CDB80640F393B2785D70B05E9ADDAC95A6A144895947D9C4C"
+                         },
+                         {
+                             "Path":  "C:\\Users\\Admin\\Documents\\WindowsPowerShell\\ProfileSources\\ps5-profile-portable\\Microsoft.PowerShell_profile.ps1",
+                             "Hash":  "1B445DA7DFB1E1D2E6F6C813D3DD9B3BA26EA465F8DD6C953FC0A3240F20F856"
+                         },
+                         {
+                             "Path":  "C:\\Users\\Admin\\Documents\\WindowsPowerShell\\ProfileSources\\ps5-profile-portable\\Microsoft.PowerShell_profile.full.ps1",
+                             "Hash":  "84BB86DD6E862702CC9533B4FCE6FF4FCDA8380FC030CEC5BF7492E2920325C0"
+                         },
+                         {
+                             "Path":  "C:\\Users\\Admin\\Documents\\WindowsPowerShell\\ProfileSources\\ps5-profile-portable\\Microsoft.PowerShell_profile.full.definitions.ps1",
+                             "Hash":  "C4C4297DF7700FF2BD649DF6EE86EF1E9EE5D21D54D76B376FC429C170B6DDE1"
+                         },
+                         {
+                             "Path":  "C:\\Users\\Admin\\Documents\\WindowsPowerShell\\ProfileSources\\ps5-profile-portable\\legacy-safe-functions\\profile-wrappers.ps1",
+                             "Hash":  "2A3953211D572BF5058ACFC342A243972AFAC4F3BF810EE8CED93C07B8109F3D"
+                         }
+                     ],
+    "CatalogsRestored":  54,
+    "Integrity":  "VerifiedClean",
+    "SignatureChecksPassed":  222,
+    "SignatureChecksTotal":  222,
+    "CleanupRegression":  {
+                              "CompletedUtc":  "2026-09-17T23:25:06.8168256Z",
+                              "CatalogFilesUnchanged":  55,
+                              "PendingQueueUnchanged":  true,
+                              "FastffExitCode":  0,
+                              "Evidence":  "F:\\study\\Systems\\Windows\\Maintenance\\Recovery\\Integrity\\PCIntegrityRepair_20260917\\evidence\\cleanup-regression-20260918-022342"
+                          },
+    "RebootReadiness":  "NeedsAttention",
+    "UnresolvedNativeChecks":  [
+                                   {
+                                       "Name":  "System filesystem",
+                                       "Passed":  false,
+                                       "Detail":  "Online CHKDSK scan; no offline repair or reboot was scheduled."
+                                   }
+                               ],
+    "AttentionItems":  [
+                           {
+                               "Check":  "Event history",
+                               "Detail":  "30 event(s): disk, 153; latest 09/18/2026 00:01:31. See full report; historical events are not automatically proof of an ongoing fault."
+                           },
+                           {
+                               "Check":  "Event history",
+                               "Detail":  "1 event(s): Service Control Manager, 7034; latest 09/17/2026 23:39:56. See full report; historical events are not automatically proof of an ongoing fault."
+                           },
+                           {
+                               "Check":  "Event history",
+                               "Detail":  "1 event(s): UASPStor, 129; latest 09/18/2026 00:01:31. See full report; historical events are not automatically proof of an ongoing fault."
+                           },
+                           {
+                               "Check":  "Crash history coverage",
+                               "Detail":  "System event history starts 09/17/2026 23:39:54; less than seven days are available. Absence of crashes is not proof of no prior crash."
+                           },
+                           {
+                               "Check":  "Pending protected-file operation",
+                               "Detail":  "C:\\Windows\\System32\\drivers\\klupd_95230141a_klark.sys -\u003e ; requires review, not blindly cleared."
+                           },
+                           {
+                               "Check":  "Pending protected-file operation",
+                               "Detail":  "C:\\Windows\\System32\\drivers\\klupd_95230141a_mark.sys -\u003e ; requires review, not blindly cleared."
+                           },
+                           {
+                               "Check":  "Pending protected-file operation",
+                               "Detail":  "C:\\Windows\\System32\\drivers\\95230141.sys -\u003e ; requires review, not blindly cleared."
+                           },
+                           {
+                               "Check":  "Crash capture",
+                               "Detail":  "No active pagefile or dedicated dump file was reported. System-managed paging configured=True; activation remains unverified until a later boot."
+                           }
+                       ],
+    "RebootPerformed":  false,
+    "UniversalSafetyGuarantee":  false
+}

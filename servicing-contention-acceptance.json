@@ -1,0 +1,17 @@
+{
+  "CapturedUtc": "2026-09-18T02:07:06.6438389Z",
+  "Failure": "Transient competing DISM caused SFC to be skipped with synthetic exit 1618",
+  "FastffLiveExit": 0,
+  "ComponentStore": "NO_CORRUPTION_FOUND",
+  "ProtectedSystemFiles": "NO_CORRUPTION_FOUND",
+  "FastffEvidence": "F:/study/Systems/Windows/Maintenance/Recovery/Integrity/PCIntegrityRepair_20260917/evidence/fastff-contention-live-20260918.txt",
+  "Fff4LiveWaitEvidence": "F:/study/Systems/Windows/Maintenance/Recovery/Integrity/PCIntegrityRepair_20260917/evidence/fff4-live-servicing-wait-20260918.txt",
+  "Fff4LoginCheckExit": 4,
+  "WrapperCopiesVerified": 5,
+  "ContentionFixturesPassed": true,
+  "NativeWorkerRegressionPassed": true,
+  "PackageManifestPassed": true,
+  "FullFff4RepairRunPerformed": false,
+  "RebootPerformed": false,
+  "Guarantee": false
+}

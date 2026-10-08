@@ -1,0 +1,7 @@
+﻿{
+    "CompletedUtc":  "2026-09-17T23:20:53.2272051Z",
+    "Script":  "F:\\study\\Systems\\Windows\\Maintenance\\Recovery\\Integrity\\PCIntegrityRepair_20260917\\WindowsCatalogRepair-Package\\Repair-WindowsCatalogCorruption.ps1",
+    "SHA256":  "D66D123A829E038255061ED6635E27968F409A99C79068716F866DDF50904B09",
+    "NativeExitCode":  4,
+    "Meaning":  "Checks completed; unresolved reboot-readiness items"
+}

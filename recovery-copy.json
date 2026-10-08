@@ -1,0 +1,7 @@
+﻿{
+    "CapturedUtc":  "2026-09-18T02:03:21.3024235Z",
+    "ActiveProject":  "F:\\study\\Systems\\Windows\\Maintenance\\Recovery\\Integrity\\PCIntegrityRepair_20260917",
+    "RecoveryPackage":  "C:\\ProgramData\\PCIntegrityRepair\\Recovery\\WindowsCatalogRepair-Package.zip",
+    "SHA256":  "FDA915298B6C3865D06E6A7BBDD061A85B79EBC9374DE2A25E886DFDAB8BDEF6",
+    "Reason":  "Retain the repair tools on the Windows volume as well as F:. This is not a backup of Windows, profiles or personal files."
+}
